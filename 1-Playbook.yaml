@@ -3,3 +3,6 @@
   tasks:
   - name: Ping the server
     ansible.builtin.ping:
+
+
+    
