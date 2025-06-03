@@ -14,7 +14,6 @@
       ansible.builtin.debug:
         msg: "{{ Course }}, and {{ Duration }}, it is handled by {{ Trainer }}"
 
-    # - name: Override variables for this task
-      
-    #   ansible.builtin.debug:
-    #     msg: "{{ Course }}, and {{ Duration }}, it is handled by {{ Trainer }}"
+    - name: Override variables for this task
+      ansible.builtin.debug:
+        msg: "{{ Course }}, and {{ Duration }}, it is handled by {{ Trainer }}"
