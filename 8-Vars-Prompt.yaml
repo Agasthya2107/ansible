@@ -12,4 +12,4 @@
   tasks: 
    - name: Reading the Variables with the prompt
      ansible.builtin.debug:
-      msg: "Course Name is {{COURSE}},Trained by {{TRAINER}} it will take minimum {{DURATION}} time"
+      msg: "Course Name is {{Course}},Trained by {{Trainer}} it will take minimum {{Duration}} time"
