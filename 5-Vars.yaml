@@ -1,7 +1,7 @@
 - name: Variables
   hosts: web
   become: yes
-  Vars:
+  vars:
    Course: "DevOps With Aws"
    Duration: 120hrs
    Trainer: "Shiva"
