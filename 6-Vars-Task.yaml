@@ -1,4 +1,4 @@
-- name: Task based Variables
+- name:
   hosts: web
   become: yes
   var:
