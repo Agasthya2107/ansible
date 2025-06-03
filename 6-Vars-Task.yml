@@ -1,0 +1,15 @@
+- name: Task based Variables
+  hosts: web
+  become: yes
+  var:
+    Course: "Aws with Devops"
+    Duration: 120hrs
+    Trainer: "Shiva"
+  tasks:
+  var:
+    Course: "Aws"
+    Duration: 12hrs
+    Trainer: "Harsha
+- name: Tasks Variables
+  ansible.builtin.debug:
+        msg: "{{Course}},and {{Duration}},it is handled by {{Trainer}}"
