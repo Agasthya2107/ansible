@@ -2,9 +2,9 @@
   hosts: local
   become: yes
   vars:
-    Course="Azure"
-    Duration=30Days
-    Trainer=Harsha
+    Course: "Azure"
+    Duration: 30Days
+    Trainer: Harsha
     topics:
       git
       maven
@@ -19,5 +19,5 @@
     - name: Displaying data types in ansible
       ansible.builtin.debug:
        msg: "Course can be {{Course}}, It will take {{Duration}} and Traind by{{Trainer}} in this cours {{topics}} along with {{tools}} covered {{is live}}"
-       
+
 
