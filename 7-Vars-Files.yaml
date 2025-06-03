@@ -4,6 +4,6 @@
   vars_files:
   - course.yaml
   tasks:
-   - name: Variables_Files
-     ansible.bulitin.debug:
+  - name: Variables_Files
+    ansible.bulitin.debug:
       msg: "Course Name is {{COURDE},Trained by {{TRAINER}} it will take minimum {{DURATION}}} time"
