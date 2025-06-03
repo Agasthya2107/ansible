@@ -2,14 +2,14 @@
   hosts: web
   become: yes
   var:
-    Course: "Aws with Devops"
-    Duration: 120hrs
-    Trainer: "Shiva"
+   Course: "Aws with Devops"
+   Duration: 120hrs
+   Trainer: "Shiva"
   tasks:
   - name: printing variables
   var:
-    Course: "Aws"
-    Duration: 12hrs
-    Trainer: "Harsha
-    ansible.builtin.debug:
-      msg: "{{Course}},and {{Duration}},it is handled by {{Trainer}}"
+   Course: "Aws"
+   Duration: 12hrs
+   Trainer: "Harsha
+   ansible.builtin.debug:
+    msg: "{{Course}},and {{Duration}},it is handled by {{Trainer}}"
