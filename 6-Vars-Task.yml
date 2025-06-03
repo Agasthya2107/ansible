@@ -6,10 +6,10 @@
     Duration: 120hrs
     Trainer: "Shiva"
   tasks:
+  - name: printing variables
   var:
     Course: "Aws"
     Duration: 12hrs
     Trainer: "Harsha
-- name: Tasks Variables
-  ansible.builtin.debug:
-        msg: "{{Course}},and {{Duration}},it is handled by {{Trainer}}"
+    ansible.builtin.debug:
+      msg: "{{Course}},and {{Duration}},it is handled by {{Trainer}}"
