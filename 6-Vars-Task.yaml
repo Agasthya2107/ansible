@@ -1,4 +1,4 @@
-- name:
+- name: Variables within the task
   hosts: web
   become: yes
   var:
