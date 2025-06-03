@@ -8,4 +8,4 @@
   tasks:
     - name: Variables Reading
       ansible.builtin.debug:
-      msg: "{{couse}} will take {{Duration}} and {{Trainer}}"
+      msg: "{{couse}}, will take {{Duration}}, and {{Trainer}}"
