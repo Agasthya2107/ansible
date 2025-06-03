@@ -14,7 +14,7 @@
      cloud: AWS
      build: Jenkin
      configuration: ansible
-     is live: yes
+    live: yes
   tasks:
     - name: Displaying data types in ansible
       ansible.builtin.debug:
