@@ -6,6 +6,6 @@
    Duration: 120hrs
    Trainer: "Shiva"
   tasks:
-    - name: Variables Reading
-      ansible.builtin.debug:
-      msg: "{{couse}}, will take {{Duration}}, and {{Trainer}}"
+  - name: Variables Reading
+    ansible.builtin.debug:
+     msg: "{{couse}}, will take {{Duration}}, and {{Trainer}}"
