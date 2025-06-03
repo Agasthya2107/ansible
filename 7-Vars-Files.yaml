@@ -5,5 +5,5 @@
   - course.yaml
   tasks:
    - name: print course information
-     ansible.bulitin.debug:
+     ansible.builtin.debug:
       msg: "Course Name is {{COURSE}},Trained by {{TRAINER}} it will take minimum {{DURATION}}} time"
