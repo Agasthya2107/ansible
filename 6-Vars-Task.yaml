@@ -2,14 +2,19 @@
   hosts: web
   become: yes
   vars:
-   Course: "Aws with Devops"
-   Duration: 120hrs
-   Trainer: "Shiva"
+    Course: "Aws with Devops"
+    Duration: "120hrs"
+    Trainer: "Shiva"
   tasks:
-  - name: printing variables
-    vars:
-     Course: "Aws"
-     Duration: 12hrs
-     Trainer: "Harsha
-    ansible.builtin.debug:
-     msg: "{{Course}}, will take {{Duration}}, and {{Trainer}}"
+    - name: Printing variables
+      vars:
+        Course: "Aws"
+        Duration: "12hrs"
+        Trainer: "Harsha"
+      ansible.builtin.debug:
+        msg: "{{ Course }}, and {{ Duration }}, it is handled by {{ Trainer }}"
+
+    # - name: Override variables for this task
+      
+    #   ansible.builtin.debug:
+    #     msg: "{{ Course }}, and {{ Duration }}, it is handled by {{ Trainer }}"
