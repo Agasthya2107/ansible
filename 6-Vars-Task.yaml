@@ -1,13 +1,13 @@
 - name: Variables within the task
   hosts: web
   become: yes
-  var:
+  vars:
    Course: "Aws with Devops"
    Duration: 120hrs
    Trainer: "Shiva"
   tasks:
   - name: printing variables
-  var:
+  vars:
    Course: "Aws"
    Duration: 12hrs
    Trainer: "Harsha
