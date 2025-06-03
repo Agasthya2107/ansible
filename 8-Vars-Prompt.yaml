@@ -1,5 +1,5 @@
 - name: Variable with prompt
-  hots: web
+  host: web
   become: yes
   vars_prompt:
    - name: Course
