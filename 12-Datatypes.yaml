@@ -1,23 +1,43 @@
-- name: toverify the data types
+# - name: toverify the data types
+#   hosts: local
+#   become: yes
+#   vars:
+#     Course: "Azure"
+#     Duration: 30Days
+#     Trainer: Harsha
+#     topics:
+#     - git
+#     - maven
+#     - ansible
+#     - docker
+#     tools:
+#      cloud: AWS
+#      build: Jenkin
+#      configuration: ansible
+#     live: yes
+#   tasks:
+#     - name: Displaying data types in ansible
+#       ansible.builtin.debug:
+#        msg: "Course can be {{Course}}, It will take {{Duration}} and Traind by{{Trainer}} in this cours {{topics}} along with {{tools}} covered {{live}}"
+
+
+- name: DevOps course information
   hosts: local
-  become: yes
+  connection: local
   vars:
-    Course: "Azure"
-    Duration: 30Days
-    Trainer: Harsha
-    topics:
-    - git
-    - maven
+    course_name: "DevOps with AWS" # string
+    duration: 120 #number
+    topics: # list, [] this means list
+    - linux
+    - shell
     - ansible
-    - docker
-    tools:
-     cloud: AWS
-     build: Jenkin
-     configuration: ansible
-    live: yes
+    - AWS
+    live: true # boolean
+    tools: #map, {} this means map
+      ci: jenkins
+      cloud: aws
+      containerization: docker
   tasks:
-    - name: Displaying data types in ansible
-      ansible.builtin.debug:
-       msg: "Course can be {{Course}}, It will take {{Duration}} and Traind by{{Trainer}} in this cours {{topics}} along with {{tools}} covered {{live}}"
-
-
+  - name: print course information
+    ansible.builtin.debug:
+      msg: "Hello I am learning {{ course_name }}, duration: {{ duration }}, topics are: {{ topics }}, is it live?: {{ live }}, tools covered are: {{ tools }}"
