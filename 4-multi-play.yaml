@@ -1,10 +1,14 @@
-- name: 
+- name: play1
   hosts: web
   become: yes
   tasks:
     - name: Task1 with Play1
       ansible.builtin.debug:
         msg: " Runing Task1 with Play1"
-    - name: TASK2 with Play2
-      ansible.builtin.debug:
-        msg: "Runing with Task2 along Play2"
+- name: play2
+  hosts: web
+  become: yes
+  tasks:
+   - name: TASK2with play2
+     ansible.builtin.debug:
+       msg: "Taskw with Play2"
