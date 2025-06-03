@@ -6,10 +6,10 @@
     Duration: 30Days
     Trainer: Harsha
     topics:
-      git
-      maven
-      ansible
-      docker
+    - git
+    - maven
+    - ansible
+    - docker
     tools:
      cloud: AWS
      build: Jenkin
